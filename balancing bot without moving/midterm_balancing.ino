@@ -105,7 +105,7 @@ int main(void)
 // We then apply a low pass filter (2) that passes signals with a frequency lower than a selected cutoff frequency.
 // After we have that we can then apply the change in positinon in radians to the time (3) putting in an easy commutable method [RAD/SEC]
 // We can then apply this to an acutal angle position rate (4) for the final high pass filter (5) to allow high frequencies to get through while filtering or cutting low frequencies.
-// THIS WORKS AND CAN BE APPLIED AND IM SO EXCITED ABOUT IT
+
       currentAngle = (gyroX_Filt + pitch_Filt + 90);                         // See above ^^ 
 
       motorSpeed = PID(wantedAngle, currentAngle);                           //PID control variable to set moter speed for balance  
